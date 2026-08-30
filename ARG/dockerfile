@@ -5,3 +5,7 @@ ENV course="devops with aws" \
     duration="120hrs"
 ARG USERNAME=Niranjan
 RUN echo "hello user: ${USERNAME}"
+
+#this ARG instruction like variable, but it only image build time, it wont work in run container, we can use this pass args new versions , 
+# ex command: docker build -t arg:1.0 --progress=plain --no-cache --build-arg version=8 .
+#this command create image base os version 8
