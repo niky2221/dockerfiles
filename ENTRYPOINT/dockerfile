@@ -1,3 +1,3 @@
 FROM almalinux:9
-CMD ["google.com"]
-ENTRYPOINT ["ping"]
+CMD ["google.com"]  # this can be override so given option for use together
+ENTRYPOINT ["ping"] # this is command while running it cannot override
